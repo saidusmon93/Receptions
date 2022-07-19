@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/syle.css">
+  <script src="jquery.3.5.js"></script>
+  <script src="bootstrap.bundle.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script> -->
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#"><img width="100" height="50" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSExIQEhEVDw8VFxgQDw8PFRUQFRUWFhUVFRUYHyggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAOEA4QMBIgACEQEDEQH/xAAcAAACAwEBAQEAAAAAAAAAAAAAAgEDBwgFBgT/xABLEAABAwEFBAMKCAwGAwAAAAABAAIDEQQSITFBBQdRcQZhkQgTFCJUdIGTsdIWMkJyc5ShsxcjNERSYmSywdHh8BUlM1OS8SSEov/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDcUISPNMkDEoUMTIIBQSkkNMs+CmLHHVAyAVKrlNMdfagclCSI1x19isQQCglLLx1Sxmpxz4ILAgFSlkyrkgYlQFWx1Tj2K1BFVKV4wVbHVz9HWgtBRVSoIQSoBVIfXDTjxV6CCVKCqL+lcK5/wQXAoJQApQCFXe009isCAQhCCCUNCCVKCp4IxHpCl0ophiTkpkfTrOirEZb42Z1/ogsjZTE4lLKKeMKCmdcBRWNdXELIt/fTJ8EbLBA67JMwvlcDi2CtA0cC4h3ob1oI6cb6o4HugsLGzvbUOlfURBwzDBm+h1y4VWYW3eptaRxd4W5nVGyNrRyqCV8deGWiRwog0HY2+LakLgZJGWhtcRMxoJHC82lFtvQTePZdptLW1itLW1dE8gkj9KM/Lb9o1XKIFV+vZ20JLPKyWJ7mSRvDmuacQ4e0cRqEHaTGk4n0DgmkZXEYFeJ0I6RN2hY4rS2gc5tHtHyZW4PHKvtXuudTEoEbLhjgRmoa29ictB/FIWF2OXD+qtjkrhkQgJGV56KGSaHAhOSqS2/jkNEDAXsT8XTrTvZVLG/Q4FWIK2Ppgc+PFL8b5vtUOF/5vtTRup4pz060DuaCKaJGuoaH0FWql3jYDLU/yQSTewGWp/gE90UpokYbvin0FWoKgbuBy0PDqKHOqaD0ngh5r4o9J4KG+Lhpx/mgta2gooAomUVQShCEAqnuu/yVhKhre1AsTdcyVYqiLuI+LqOCZ0gArnw60Fcni4jXRctb5LY6Ta1pr8kxsHzWtFF1Qxmpz9i5o377JMO1HSUIZaImSNOl4eI8c6j7QgzdO3HBRd0Uk6BAOwwSJmnQou6IN87nS1ONktLK4MtDXCuVHMFR9i16PxjU6aLM+5/2KYrA6ZwP4+cubX9Boug8sCtPkZqM/agsVcrNciNVLJARwpmkAvYn4unWg87bG24LNEZrTK2KJpAq6uLjkABiThkF89+FrY3lY9RaPdXzPdIfkdm87P3Tlz45qDqeTevsY/ngroe8Wj3Uh3sbIOBtgA6obRj/APK5cy5qA5B1SN7WxvKx6i0e6lfvY2MfzseotHurlhw7FIw5oOo/wsbJOBtgpxENoxH/ABVjd7Oxh+dj1Fo91crhxUuGoQdTu3sbGOBtY9RaPdVf4WNk5eGCnHvNorTldXLgFMSovHNB1z0f6e7Ntcggs9pa+UgkNLJIy6mdL4FTyX05FVyTuuP+bWI/tLfYV1m9+NBn7EC3qYV/orWhQ1gAogYIGQhCCCVKFW513kgaR9FSGFvjU/orI2anP2KxBAK+Q3m9DWbTstyobPGS6F50eRiw/quoK8gdF9U7xcRkdOvqXyXSfeLs+wuuzTX5f9uEd8c351MB6UHL+1tmzWaV0E7HRSswIcKekcQeK/AQutZbBszbtmZM6Nk8ZqGvxjljdq28KOacqtyOGa+M2huHshNY7VaWNrk5schA54IOfQF9ju/6Cz7TlDWhzLM0jvstMA3VsdcC8/Zqte2FuR2dGb0rp7Tj8V7xEw8wzH7V9B0j6a7N2P3uzuAZ4ouxWeMeJHxLRgB7UH1WzbNHFEyKJoZHGxrGtHyWtFAF+glePsPpBZbYzv1lmZIKeMAaOHU5pxaV6bfHx0GnX1oFcwuxH/atjfXnwTquRmowPtQZJ3SP5HZvOz905c/g0W+90ZJWx2Y/tbu3vTlz8gZwSpmu7ExbTFANwSvGqglS1yBU7cMVN0DFISgZ2OKRS00T3Rnog+m3XsrtWx+ct9hXWcfimh1yPFcm7rjXa1i85b7Cut3NrgUEqKqsOIwz4KxoQShCEEEpQ3UpipQU/F+b7E8srWtLiQAASSTQUGNaqZHADFYZv06ZuH+WwPIwDrQWnG6cWw14ZE+gZVQfg3nb25JnOs1geY4RVr5mGj5NCIz8lnWMT1DPJCb2eedTqetVqQEHv9Eel1s2dJfs0lAfjxvF6N/zm8esUPWtXsO/qIgd/scgcP8AZkY5pPHxqFYbXTVVlBsW39+szw5tjgbAXD/UmIlcOtrPi151HUskt1qkmkdJK98kr3Euc9xc5xOpJVAVldNUH6tl7UmssjZYJXxStIIcx1PQRk4cQagrozdjvJj2iBFJditzW4tGDZmgYuj66YlunJcykK6xWp8UjJY3OZIx7XNc00LXA1BBQdtMeCKqv43zfavk93nSobTsgmwEzKMmYMPxg1A4EYhfYRuBGCDIu6PaPBLN5277py58cKLoPukfyOzedn7py5/aaZoIApzUB3FDwlQM5vYgDUpm4DFQ8aoID0Ob2JU7MOSCGjUovqX8dEiD6zdcP82sRHlLfYV1nI/QZrkndg0/4rY/OW+wrrSLA0OfHigdseHEqQmUFBKEIQCrLrueSclLcrmg8vpFtRtkss1rkyihe8CubqeK0dZcQPSuPNoW180r5pDekke57j+s41PoXYHSTYUVsgdZbRfMD3MJuPLCbrg4AkaVAPoXyLty2yBjcn9e9BzPnzQTTALpePctso43JwPOHqH7l9lA4snI+nfgg5mTjHmumTuV2Tncn+sPSR7l9lHG5OB9O/FBzScOaRdNSbl9lDG5OR9O9MNyuyf0J/rD0HMwNcCjLmulmbl9lE4MnA+nfipk3LbKzuTn/wBh6DJdyfSI2TaTGE0htP4l9TQXjjE7mHYcnFdPvbTEZ6jis/su5zZTXNkY2cOa5rge/vwc01H2hffEl2Ay1PFBkndGSVsdmIGHhju3vTlz8SuzNv7As9riMM8TZY6g3T+kMnNOjsTj1r5hm6XZBH5OfWvQcttOhyU3aLqI7pdk1oLMes99kwVO091+x4YpJnWc3Y43vNZX5NBNM+pBzCSpa7sTT0vEgUBJIHAHIJWjUoJujPRK41TX+xbPuc6H7N2hZHmeG/PFM5rj3xzasd4zDQdWHoQYu0qbuui6ifum2QMBZiT9K9N+CLZNPyc+tkQYJuuNdrWLzlvsK61eyq+V6O9AdnWObv0NnDZmggFznPpXVtcivqZH06ygUPIwOftVjQkbHxzTNKBkIQgotlpZEx8sjg2ONjnuccmsaCXE8gCuaumW923WqRws8jrLZwTdaygkc3Qvdx6hl1red4tlfLsy2MjBLzZZaAZmgvFo4kgEU61yGW1xCD2x002kfz21euemPTLaPltqr9M9eCTTAJQUHvfDXaPltq9c9A6abS8ttXrnrw6V5oy5oPf+GW0cvDbVX6Z6T4a7R8ttXrnrwE+fNB7nw12j5bavXPT/AAy2jl4daq/TPXgZc0iD3/hptLy21euej4a7R8ttXrnrw8+aAKc0HvDpltHW3Wr1z0p6abSH57avXPXgkpga4FB7nw12j5bavXPTDpltHW22r1z14IbTNKSg989M9oj89tXrnqm1dLLfKx0clrtL2OFHNdK8gjgQvHadCpu0zQS3LHJK9Q41UtdockCr0dk7YtFmvGCeWG9S93p5ZepWlaZ5lfhudihzqoPfd0z2j5bavXPS/DXaPltq9c9eE13YpudiD3W9M9o+W2r1z1Lume0cxbbV6568BzuxDXUQfcdGt6u0rLIC6Z1oir40c5vVGtHZtK6Y6PbZitlmitURrHKwOFcwcnNPW1wIPWFxhc4ZLqHcdZXx7Ihvgi/JO9gOB7255umnXQn0oPv0IQggrIemO5RloldPY5WWcvJLo5GF0d44ktc3FnKh9C14qUHJ/T3d5aNlNifNLBIJXPaO898wLQCa3gOK+NC3zulP9Gx/TT/utWDnqzQLWnNBFeaRSEEJ8uab2qooHz5pEK2nagUCnNFa80pKhBJCkCmJTjrzVbigatc0pChWN60CtGpU3q5qHpUEuFFLW9iZuWOSh6Av9iVzaKE7PsQQ1vYpv9iH/YkQM5vYvo+g3Q2XakkkUUkUbo4w8mW/QguDaC6DjivnY/sWvdzgP/MtPmjfvGoPW6M7ibkgfbLQySNpr3qBrwHn9aR1CB1AelbPZ42saGNaGta0NAaKANAoABwVqgoJQhCCCEt+mBTqtzb3JBjXdIvJhsZ079PT/i1YMCt47pKveLGDpNP2XWrBkDkVxCMuaMuaCK4hAtUxFeaROMMdUABTmlqmOPNIgfPmgCmJQBTFGfNApKbPmkTtGpQAbxSuNU1a80pQMDXAoDOKhrexTergghzqoadCoIUtb2IJuKHO7FN4ZaJXCiCWnQ5KbiVoqnvDLRArjoMlrfc4Nra7TTPwRv3jVkbm0Wu9ze6lrtPmjfvGoOgWycc0wSBhOJwKsaUEoQhBBClQQoDtDmgxvulD+Jsf00/7rVgxFMf7C3bukZKw2M6d+tH7rVgwcghSCpI1CkCnNA1NaehVkovapiK4hAoKsprRKBqUpdqgCVCcivNQ0alA4Fcf7KrcUFybPmgRWNFc0rW8ckOcgHlKnz5qA1Azcc0rzohzuxSDXAoETtxw/sKA1DjoMkEv4JEzToUXcaIJZwWvdzg0eGWnzRv3jVkBOgWt9zgD4XaaZ+CN+8ag6GUEJWyVCkIGQhCAVT23uSsIUoMV7pE/iLGDmJp/3WrBlvvdKH8TY/pp/wBxqwYimKCBghwrilJQ00QQnbhipujNISgZ2OKRSCnujNBDRqg480rjVAKCEzRromArilc6qBiaqtCsAqgVoTE1wSuKVBJQ0VTDFQ46IGvA4JCFCduOCBQKp7wyUONMEiCXCi17ubjS12o/sjfvGrI2muC13ucWDwy0+aN+8ag326TjkrWlSooglCEIIIUNd2plU8Vy7UGOd0k/8TY+qaftutWDBy6I7oHZMk1hjmY0nwaYmQAVIjeLt/kCG15rnVAzhrogCmJUtwQ8aoIvII1CVOzDFBDRqUXlLscUiByK4hQ1vYpYNVLsUClyk480iZgQDW9iHOTOxyVaB8+aUNUtCYmuX/aBXO0CkY80ikBABqknQJia4f2UhQMDXApbuiAFZXT7UCk0wC1vucCfC7TTSyN+8asiIW4dzfsiRptNscCIi1kLCRS84G88jqHij09SDcGvBFUA1VdK4gYe1WgoJQhCCCpAUFDXIKrTAHgggEEEEEVBBzBGoWWbZ3JWGeQvhkmspJJLGhksYNfkh1COVSFqj3E4D0nggxcMCP7xQYxatwsLWOf4dKbrHH8nj0Ff0lhTXUXbFpq+N7R8YxvFOsggLj209GbZG90b7LaLzHEGkErhUcCBQhB5d0Z6L9/R3ZwtVqhs5cWCWZjLwAcWhxpUDVH+CWvyW0/V5f5L6Td10btbtpWUizztaydkji+J8bWsaakkuFEGijcBD5dL9Xj95VncJBWnhs1fN4/eWzyP0GagQimOfHrQY6dwMPl0v1eP3kDcBD5dL9Xj95bGx+hz0PFTI+nWdEGLv3Cwg0Num+rx+8rPwAw+XS/V4/eWxCLjiT/eCGOIND6Cgx0bgIfLpfq8fvKuTcJCM7dNjws8fvLaZH0SNjri7En7AgxwbgYfLpfq8fvI/ABD5dL9Xj95bGDdwOWh/gU730FUGLy7hIRibdN9Xj95M3cFDT8ulx/Z4/eWxtZXF3oHAKPi/N9iDkPp70dbs+2yWVsjpQwRm85oYTeaDkCeK8EY81pu+7o/ajtOSZsEr4pGRFro43yDxWhpBLRgahfBf4FaxlZbT9Xm/kg88mmC2XoxuUitdkgtJtkjDNBHIWiBjg0uFaA3sVljdgWt2HgtqrkP/Hlx+xdY9CLG+DZ9likF2SOyxNcK1o4NFQgz6w7ibJG4OmtE87AfiBrIARwLhU05ELUNnWKOONsUTGxwsAa1jAAAB1L9AF75vtUubTEZaj+SC1RRDXVxUA1QMhCEAq3jhmrEIEjpROoIQUFcoqcM+KmIDLXrTgUQQgKKuUaDNWIAQVxCmeftVqghFUCTCuGuiiMUOOfFWAIIQSklpTFMEAIKo20OOeiuUEICCH0piqmNoRX0dStomIQCh3WgBRRBS1vH4unUr6BSlApyQTgqLuvya5K4iqZBAUpQKIIqgS7wyVoQhAIQhAIQhAIQhAIQhAIQhAIQhAIQhAIQhAIQhAIQhAIQhAIQhAIQhAIQhAIQhAIQhB//2Q==" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="todo.html">Statistika</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <br>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+      Anketa
+    </button>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Anketa</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form name="newItem">
+              <input class="form-control" type="text" name="ism" placeholder="Ism" id="ism"> <br> <br>
+              <input class="form-control" type="text" name="familiya" placeholder="Familiya" id="familiya"> <br> <br>
+              <input class="form-control" type="number" name="age" placeholder="Age" id="age"> <br> <br>
+              <input class="form-control" type="text" name="viloyat" placeholder="Viloyat" id="viloyat"><br> <br>
+
+              <input type="radio" name="r" value="erkak" id="er">
+              <label for="er">Erkak</label>
+              <input type="radio" name="r" value="ayol" id="ayol">
+              <label for="ayol">Ayol</label>
+              <!-- <button type="button" class="btn btn-primary" id="btn">+</button> -->
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" id="btn">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <table class="table table-striped table-dark">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Familiya</th>
+          <th scope="col">Age</th>
+          <th scope="col">Viloyat</th>
+          <th scope="col">Jinsi</th>
+        </tr>
+        <tr>
+          <th scope="col"><i class="fa fa-search" aria-hidden="true"></i></th>
+          <th scope="col"><input type="text" class="form-control" name="" id="search" onchange="myFunction()" placeholder="Ism"></th>
+          <th scope="col"><input type="text" class="form-control" name="" id="searchTwo" onchange="myFunction()" placeholder="Familiya"></th>
+          <th scope="col"><input type="number" class="form-control" name="" id="searchThree" oninput="myFunction()" placeholder="Age"></th>
+          <th scope="col"> <select name="sel" class="form-control" id="myselect" onchange="addVil()">
+              <option value="Andijon">Andijon</option>
+              <option value="Namangan">Namangan</option>
+              <option value="Fergana">Fergana</option>
+              <option value="Tashkent">Tashkent</option>
+              <option value="Sirdaryo">Sirdaryo</option>
+              <option value="Jizzax">Jizzax</option>
+              <option value="Buxoro">Buxoro</option>
+              <option value="Navoiy">Navoiy</option>
+              <option value="Xorasm">Xorazm</option>
+              <option value="Qashqadaryo">Qashqadaryo</option>
+              <option value="Surxondaryo">Surxondaryo</option>
+              <option value="Qoraqalpogiston">Qoraqalpogiston</option>
+              <option value="Samarqand">Samarqand</option>
+            </select></th>
+        </tr>
+      </thead>
+      <tbody id="table">
+      </tbody>
+    </table>
+  </div>
+  <p id="par"></p>
+  <script src="script.js"></script>
+</body>
+
+</html>

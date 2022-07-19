@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/syle.css">
+        <script src="jquery.3.5.js"></script>
+        <script>
+        $(document).ready(function() {
+            $('.click').click(function() {
+                $('input.name').each((i,item) =>{
+                    console.log($(item).val());
+                })
+            });
+        
+            $('input').focus(function() {
+                $(this).css('border', '1px solid red')
+                $(this).css('outline', 'none')
+            });
+
+            $('input').blur(function() {
+                $(this).css('border', '1px solid black')
+                $(this).css('outline', 'none')
+            })
+
+            $('input').keypress(function(event) {
+                console.log({key:event.key, keyCode: event.keyCode});
+                console.log(event);
+            });
+
+       
+        })
+        
+               
+    
+        </script>
+    </head>
+    <body>
+        <button class="draggable" draggable="true">Draggable</button>
+        <input type="text" class="name">
+        <input type="text" class="name">
+        <button class="click" type="button">Click</button>
+        <button class="click" type="button">Click 2</button>
+        <button class="sub" type="button">Click</button>
+    </body>
+</html>
